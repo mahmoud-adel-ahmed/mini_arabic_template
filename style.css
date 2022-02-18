@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+html,
+body {
+  direction: rtl;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #eee;
+}
+button {
+  display: block;
+  padding: 10px 15px;
+  background-color: #3db4b7;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.container {
+  padding: 35px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.right {
+  flex-basis: 60%;
+}
+.sec-1,
+.sec-2 {
+  width: 100%;
+}
+
+.sec-1 h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.sec-1 p {
+  color: #999;
+  margin-bottom: 20px;
+  font-size: 19px;
+  line-height: 1.3;
+}
+.sec-2 {
+  padding: 60px;
+}
+
+.sec-2 .info > div {
+  position: relative;
+  margin-bottom: 30px;
+}
+.sec-2 .info > div:last-of-type {
+  margin-right: 70px;
+}
+.sec-2 .info > div img {
+  position: absolute;
+  right: 0;
+  top: 7px;
+  width: 45px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.sec-2 .info > div:last-of-type img {
+  top: 30px;
+}
+
+.info div > .content {
+  margin-right: 60px;
+}
+.content h3 {
+  margin-bottom: 10px;
+}
+.content p {
+  color: #999;
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+/* left sec */
+.left {
+  flex-basis: 35%;
+  /* align-self: center; */
+}
+.left h3 {
+  margin-bottom: 30px;
+}
+.left form label {
+  width: 55px;
+  height: 55px;
+  border: 1px solid #999;
+  cursor: pointer;
+}
+
+label img {
+  width: 17px;
+  height: 17px;
+  display: block;
+  margin: 17px auto;
+}
+form {
+  background: #fff;
+  width: 100%;
+  border: 2px solid #ddd;
+  padding: 70px 35px;
+}
+form .inputBox {
+  width: 100%;
+  display: flex;
+  margin-bottom: 50px;
+}
+form .inputBox input {
+  width: 100%;
+  font-size: 19px;
+  padding: 15px;
+  border: 1px solid #999;
+}
+
+.inputBox:last-of-type {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputBox > .data {
+  display: flex;
+  width: 30%;
+  margin-bottom: 25px;
+}
+
+.data > p {
+  align-self: center;
+}
+
+.inputBox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  align-self: center;
+}
+.inputBox:last-of-type > p {
+  font-size: 15px;
+  color: #999;
+  align-self: center;
+  margin-left: 30px;
+}
+.data > p {
+  margin-right: 10px;
+}
+
+form > button {
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  border-bottom: 5px solid rgb(56, 167, 167);
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    padding: 13px;
+  }
+  .left,
+  .right {
+    flex-basis: 100%;
+  }
+
+  .sec-2 {
+    padding: 60px 0;
+  }
+}
