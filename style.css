@@ -160,7 +160,7 @@ form > button {
   border-bottom: 5px solid rgb(56, 167, 167);
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 62em) {
   .container {
     padding: 13px;
   }
